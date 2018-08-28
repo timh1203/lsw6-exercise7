@@ -14,12 +14,12 @@
 <script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 
 <script type='text/babel'>
-  const DynamicButton = () => <button>Click Me!</button>
+  const DynamicButton = (props) => <button>{ props.buttonText }</button>
 
   const App = () => {
     return (
       <div>
-        <DynamicButton />
+        <DynamicButton buttonText="Buy Now" />
       </div>
     )
   }
